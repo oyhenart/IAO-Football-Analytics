@@ -27,3 +27,9 @@ Proyecto de análisis de datos de fútbol, enfocado en métricas, visualizacione
 ## 📝 Notebooks
 
 - `Scatter_plot_flechas_pases.ipynb`: Análisis de pases con mapa de flechas y visualizaciones de dirección y longitud.
+
+
+## 📚 Fuentes / Créditos
+
+Algunos ejercicios y datos fueron obtenidos o inspirados en [LanusStats](https://linktr.ee/lanusstats)  
+Se usaron para fines educativos y de aprendizaje personal.
