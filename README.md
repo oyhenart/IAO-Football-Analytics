@@ -20,15 +20,15 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
 
 ---
 
-## 📊 Notebooks disponibles
+# 📊 Notebooks disponibles
 
-| Notebook | Descripción |
-|-----------|--------------|
-| [`Mapas_de_pases.ipynb`](notebooks/Mapas_de_pases.ipynb) | Visualización de pases entre jugadores con estructura y estilo de red. |
-| [`Mapa_de_calor.ipynb`](notebooks/Mapa_de_calor.ipynb) | Genera mapas de calor para analizar zonas de mayor actividad en el campo. |
-| [`Scatter_plot_flechas_pases.ipynb`](notebooks/Scatter_plot_flechas_pases.ipynb) | Muestra los pases entre jugadores con flechas indicando dirección e intensidad. |
-| [`scatter_plot_efectividad_defensiva.ipynb`](notebooks/scatter_plot_efectividad_defensiva.ipynb) | Analiza y representa visualmente las acciones defensivas de los jugadores. |
-| [`Mapa_de_pases.ipynb`](notebooks/Mapa_de_pases.ipynb) | Crea mapas de pases simples como punto de partida para análisis tácticos. |
+| Notebook | Descripción | Abrir en Colab |
+|-----------|-------------|----------------|
+| [`Mapas_de_pases.ipynb`](notebooks/Mapas_de_pases.ipynb) | Visualización de pases entre jugadores con estructura y estilo de red. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapas_de_pases.ipynb) |
+| [`Mapa_de_calor.ipynb`](notebooks/Mapa_de_calor.ipynb) | Genera mapas de calor para analizar zonas de mayor actividad en el campo. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapa_de_calor.ipynb) |
+| [`Scatter_plot_flechas_pases.ipynb`](notebooks/Scatter_plot_flechas_pases.ipynb) | Muestra los pases entre jugadores con flechas indicando dirección e intensidad. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb) |
+| [`scatter_plot_efectividad_defensiva.ipynb`](notebooks/scatter_plot_efectividad_defensiva.ipynb) | Analiza y representa visualmente las acciones defensivas de los jugadores. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/scatter_plot_efectividad_defensiva.ipynb) |
+| [`Mapa_de_pases.ipynb`](notebooks/Mapa_de_pases.ipynb) | Crea mapas de pases simples como punto de partida para análisis tácticos. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapa_de_pases.ipynb) |
 | *(Próximamente)* | Más análisis y modelos de rendimiento. |
 
 ---
