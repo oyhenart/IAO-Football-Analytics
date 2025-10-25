@@ -1,0 +1,16 @@
+# Librerías para manipulación de datos
+pandas==2.1.0
+numpy==1.26.0
+
+# Librerías para visualización
+matplotlib==3.8.0
+seaborn==0.13.2
+mplsoccer==0.4.2
+
+# Notebooks / entornos interactivos
+jupyter==1.0.0
+ipython==8.17.0
+
+# Otros útiles
+scipy==1.11.1
+requests==2.31.0
