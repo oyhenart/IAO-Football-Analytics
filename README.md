@@ -24,3 +24,5 @@ Proyecto de análisis de datos de fútbol, enfocado en métricas, visualizacione
 
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb)
