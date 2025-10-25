@@ -21,3 +21,6 @@ Proyecto de análisis de datos de fútbol, enfocado en métricas, visualizacione
 ## 📝 Notebooks
 
 - `Scatter_plot_flechas_pases.ipynb`: Análisis de pases con mapa de flechas y visualizaciones de dirección y longitud.
+
+![Python](https://img.shields.io/badge/python-3.12-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
