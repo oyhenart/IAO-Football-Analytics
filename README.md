@@ -17,3 +17,7 @@ Proyecto de análisis de datos de fútbol, enfocado en métricas, visualizacione
 2. Instalar librerías necesarias:
    ```python
    !pip install -r requirements.txt
+
+## 📝 Notebooks
+
+- `Scatter_plot_flechas_pases.ipynb`: Análisis de pases con mapa de flechas y visualizaciones de dirección y longitud.
