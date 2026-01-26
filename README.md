@@ -1,4 +1,4 @@
-
+<p align="center">
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
 ![n8n](https://img.shields.io/badge/n8n-workflow-red?logo=n8n)
@@ -7,6 +7,7 @@
 ![Gemini](https://img.shields.io/badge/Google_Gemini-8E75C2?style=flat&logo=googlegemini&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat&logo=openai&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
+</p>
 
 # IAO Football Analytics 
 
@@ -38,16 +39,16 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
 
 ---
 
-## Automatización (n8n)
+### Automatización (n8n)
 
 Para optimizar el flujo de trabajo, he integrado un sistema de automatización utilizando **n8n**. Esto permite que la recolección de datos no sea manual, facilitando un pipeline de datos más dinámico.
 
-* **Carpeta:** `/automation`
-* **Funcionalidad:** * Conexión con APIs de datos deportivos.
-    * Limpieza inicial de JSONs y conversión a formato compatible con Pandas.
-    * Almacenamiento automático en la carpeta `/data`.
+| Workflow | Descripción | Estado |
+| :--- | :--- | :--- |
+| [obtencion_datos_futbol.json](./workflow/obtencion_datos_futbol.json) | Conexión con APIs, limpieza inicial de JSONs y almacenamiento en `/data`. | ![n8n](https://img.shields.io/badge/n8n-workflow-red?logo=n8n) |
+| *(Próximamente)* | Automatización de reportes tácticos y alertas de partidos. | ⏳ En desarrollo |
 
-> **Nota:** Los archivos `.json` en la carpeta de automatización son exportaciones de los workflows. Para usarlos, impórtalos en tu instancia de n8n.
+> **Nota:** Los archivos `.json` en la carpeta `workflow/` son exportaciones. Para usarlos, impórtalos en tu instancia de n8n.
 
 ## Librerías principales
 - `pandas`  
