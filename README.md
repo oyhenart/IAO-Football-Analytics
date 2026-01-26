@@ -33,6 +33,17 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
 
 ---
 
+## 🤖 Automatización (n8n)
+
+Para optimizar el flujo de trabajo, he integrado un sistema de automatización utilizando **n8n**. Esto permite que la recolección de datos no sea manual, facilitando un pipeline de datos más dinámico.
+
+* **Carpeta:** `/automation`
+* **Funcionalidad:** * Conexión con APIs de datos deportivos.
+    * Limpieza inicial de JSONs y conversión a formato compatible con Pandas.
+    * Almacenamiento automático en la carpeta `/data`.
+
+> **Nota:** Los archivos `.json` en la carpeta de automatización son exportaciones de los workflows. Para usarlos, impórtalos en tu instancia de n8n.
+
 ## Librerías principales
 - `pandas`  
 - `numpy`  
