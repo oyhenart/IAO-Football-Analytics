@@ -1,12 +1,12 @@
 
 ![Python](https://img.shields.io/badge/python-3.12-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
 ![n8n](https://img.shields.io/badge/n8n-workflow-red?logo=n8n)
 ![JSON](https://img.shields.io/badge/data-JSON-lightgrey?logo=json)
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb)
+![Colab](https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Google_Gemini-8E75C2?style=flat&logo=googlegemini&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat&logo=openai&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 # IAO Football Analytics 
 
