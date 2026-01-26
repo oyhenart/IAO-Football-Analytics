@@ -2,6 +2,8 @@
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![n8n](https://img.shields.io/badge/n8n-workflow-red?logo=n8n)
+![JSON](https://img.shields.io/badge/data-JSON-lightgrey?logo=json)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb)
 
 # IAO Football Analytics 
@@ -17,6 +19,7 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
 - `src/` → scripts de Python para procesamiento, análisis o funciones.  
 - `outputs/` → gráficos, resultados y reportes generados.  
 - `notebooks/` → notebooks de experimentación y análisis.
+- `workflow/` → flujos de n8n para la obtención y limpieza automática de datos.
 
 ---
 
@@ -33,7 +36,7 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
 
 ---
 
-## 🤖 Automatización (n8n)
+## Automatización (n8n)
 
 Para optimizar el flujo de trabajo, he integrado un sistema de automatización utilizando **n8n**. Esto permite que la recolección de datos no sea manual, facilitando un pipeline de datos más dinámico.
 
