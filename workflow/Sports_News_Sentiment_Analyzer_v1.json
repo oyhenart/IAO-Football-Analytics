@@ -1,0 +1,462 @@
+{
+  "name": "Sports_News_Sentiment_Analyzer_v1",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -336,
+        0
+      ],
+      "id": "a904d5f1-5d31-4026-be41-057f67d8d7d4",
+      "name": "Disparador diario"
+    },
+    {
+      "parameters": {
+        "url": "https://news.google.com/rss/search?q=Como+1907+when:7d&hl=es-419&gl=AR&ceid=AR:es",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -128,
+        0
+      ],
+      "id": "46c3c7fc-882b-4cd0-aad1-1fc8424f9307",
+      "name": "Buscador y Lector de noticias"
+    },
+    {
+      "parameters": {
+        "maxItems": 5
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        240,
+        0
+      ],
+      "id": "00110085-ae44-4b3d-96ee-053997f2ae1d",
+      "name": "Limit"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-5.2",
+          "mode": "list",
+          "cachedResultName": "GPT-5.2"
+        },
+        "responses": {
+          "values": [
+            {
+              "content": "=INSTRUCCIONES DE PROCESAMIENTO TÉCNICO\nROL: Analista de Inteligencia de Datos para el Como 1907.\n\nOBJETIVO: Extraer metadatos precisos de la noticia proporcionada para alimentar una base de datos de scouting.\n\nDATOS DE ENTRADA:\n\nTítulo: {{ $json.title }}\n\nFragmento de Noticia: {{ $json.contentSnippet }}\n\nREGLAS DE EXTRACCIÓN (ESTRICTAS):\n\nsentimiento: Analizá el tono del texto. Asigná un entero del 1 al 10. (Ej: Fichaje/Victoria = 8-10; Rumor/Neutral = 5; Lesión/Derrota = 1-3).\n\nresumen: Generá una síntesis técnica de máximo 15 palabras. Debe incluir un dato que NO esté en el título (ej. montos, fechas, motivos). Prohibido usar frases genéricas.\n\njugadores: Identificá nombres propios de personas. Si el título dice \"Andrés Cuenca\", DEBES ponerlo aquí. Si el texto menciona a \"Cesc\", incluilo.\n\nFORMATO DE SALIDA: Responde ÚNICAMENTE con un JSON puro. Sin texto antes, sin texto después.\n\nJSON SCHEMA: { \"sentimiento\": number, \"resumen\": \"string\", \"jugadores\": \"string\" }\n\nVALIDACIONES OBLIGATORIAS:\n- \"jugadores\" NUNCA puede ser \"N/A\" si hay nombres propios en el título.\n- Si aparece un nombre en el título, DEBE repetirse textual en \"jugadores\".\n- Si no hay jugadores, devolver \"Ninguno\".\n\nREGLAS ADICIONALES:\n- \"jugadores\" debe ser un string separado por comas.\n- Si hay un nombre propio en el título, debe aparecer exactamente igual en \"jugadores\".\n- No devuelvas null, undefined ni arrays.\n\nDEVOLVÉ SIEMPRE EL JSON, aunque falten datos.\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {
+          "textFormat": {
+            "textOptions": {
+              "type": "json_object"
+            }
+          }
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        432,
+        0
+      ],
+      "id": "58f25ad5-6332-47fd-972a-fe8e075d82aa",
+      "name": "Oteador GPT",
+      "credentials": {
+        "openAiApi": {
+          "id": "o6gKZEsgCv5Zs2A4",
+          "name": "Chat GPT"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// 1. Capturamos la salida de la IA (Oteador GPT)\nconst item = $input.item.json;\nlet aiData = {};\n\n// 2. Recuperamos la noticia original dinámicamente\nconst noticiaOriginal = $node[\"Limit\"].json;\n\n// 3. Lógica de Fuente\nlet fuente = \"Google News\";\nconst url = (noticiaOriginal.link || \"\").toLowerCase();\nconst title = (noticiaOriginal.title || \"\").toLowerCase();\n\nif (url.includes(\"sport.es\") || title.includes(\"sport\")) fuente = \"Diario SPORT\";\nelse if (url.includes(\"fichajes.net\") || title.includes(\"fichajes\")) fuente = \"Fichajes.net\";\nelse if (url.includes(\"tribuna.com\")) fuente = \"Tribuna.com\";\nelse if (url.includes(\"tycsports\")) fuente = \"TyC Sports\";\n\n// 4. Retorno final: Volvemos al Link original sin HTML\nreturn {\n    Fecha: noticiaOriginal.isoDate,\n    Titulo: noticiaOriginal.title,\n    Fuente: fuente,\n    Sentimiento_Score: $json.output[0].content[0].text.sentimiento,\n    Jugadores_Mencionados: $json.output[0].content[0].text.jugadores,\n    Resumen: $json.output[0].content[0].text.resumen,\n    Link: noticiaOriginal.link\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        752,
+        0
+      ],
+      "id": "697d4530-498d-4b78-b5c3-55007112e525",
+      "name": "NLP Limpieza y Estructuración de datos"
+    },
+    {
+      "parameters": {
+        "sortFieldsUi": {
+          "sortField": [
+            {
+              "fieldName": "isoDate",
+              "order": "descending"
+            }
+          ]
+        },
+        "options": {
+          "disableDotNotation": false
+        }
+      },
+      "type": "n8n-nodes-base.sort",
+      "typeVersion": 1,
+      "position": [
+        64,
+        0
+      ],
+      "id": "4c3f3255-7ce3-4aed-babd-bcc5e9849ae5",
+      "name": "Sort"
+    },
+    {
+      "parameters": {
+        "operation": "convertToHtmlTable",
+        "options": {
+          "customStyling": true,
+          "tableAttributes": "width=\"100%\"",
+          "headerAttributes": "style=\"background-color: #003366; color: white; white-space: nowrap;\"",
+          "cellAttributes": "style=\"padding: 8px; border: 1px solid #ddd;\""
+        }
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        1328,
+        0
+      ],
+      "id": "4062a3cd-375d-4510-900a-c3c77bf810a8",
+      "name": "HTML"
+    },
+    {
+      "parameters": {
+        "sendTo": "israeloyhenart@gmail.com",
+        "subject": "Top 5 noticias del Como 1907",
+        "message": "=<div style=\"font-family: Arial, sans-serif; width: 98%; max-width: 1400px;; margin: auto; border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px;\">\n  \n  <div style=\"background-color: #003366; color: white; padding: 15px; border-radius: 5px 5px 0 0; text-align: center;\">\n    <h2 style=\"margin: 0;\">🔵 Reporte de Scouting: Como 1907</h2>\n    <p style=\"margin: 5px 0 0; font-size: 0.9em;\">Noticias detectadas en las últimas 24hs</p>\n  </div>\n\n  <div style=\"padding: 20px;\">\n    <p>Hola <strong>Israel</strong>,</p>\n    <p>Se procesaron las 5 noticias más relevantes del Como 1907. Acá tenés el desglose técnico:</p>\n    \n    <div style=\"overflow-x: auto;\">\n      {{ $json.table }}\n    </div>\n\n    <p style=\"margin-top: 20px; font-size: 0.85em; color: #777;\">\n      * Este es un reporte automatizado. Los puntajes de sentimiento y jugadores son detectados por IA.\n    </p>\n  </div>\n\n  <div style=\"background-color: #f9f9f9; padding: 10px; text-align: center; font-size: 0.8em; color: #999; border-radius: 0 0 5px 5px;\">\n    © 2026 IAO Football Analytics v.1\n  </div>\n</div>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        1520,
+        0
+      ],
+      "id": "c84c50a0-6f67-4aa0-b1f2-c69f4e607494",
+      "name": "Send a message",
+      "webhookId": "877f4fc8-e473-449e-b014-b5f452db8e14",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "9UJ1uG9o9Su1VcLJ",
+          "name": "Gmail"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "clear",
+        "documentId": {
+          "__rl": true,
+          "value": "1yKYr69AwXz92YCNHdqxW2X5Ba8_eJy8xRW4h7Qfo210",
+          "mode": "list",
+          "cachedResultName": "DB_Noticias_Como1907",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1yKYr69AwXz92YCNHdqxW2X5Ba8_eJy8xRW4h7Qfo210/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Hoja 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1yKYr69AwXz92YCNHdqxW2X5Ba8_eJy8xRW4h7Qfo210/edit#gid=0"
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1680,
+        0
+      ],
+      "id": "8c8c48a0-3dfb-4ec8-910f-52659444bfc3",
+      "name": "Clear sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "MycVBaeRWh2KeZHs",
+          "name": "Google Sheets"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1yKYr69AwXz92YCNHdqxW2X5Ba8_eJy8xRW4h7Qfo210",
+          "mode": "list",
+          "cachedResultName": "DB_Noticias_Como1907",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1yKYr69AwXz92YCNHdqxW2X5Ba8_eJy8xRW4h7Qfo210/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Hoja 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1yKYr69AwXz92YCNHdqxW2X5Ba8_eJy8xRW4h7Qfo210/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Fecha": "={{ $json.Fecha }}",
+            "Titulo": "={{ $json.Titulo }}",
+            "Sentimiento_Score": "={{ $json.Sentimiento_Score }}",
+            "Resumen": "={{ $json.Resumen }}",
+            "Jugadores_Mencionados": "={{ $json.Jugadores_Mencionados }}",
+            "Fuente": "={{ $json.Fuente }}",
+            "Link": "={{ $json.Link }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Fecha",
+              "displayName": "Fecha",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Titulo",
+              "displayName": "Titulo",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Fuente",
+              "displayName": "Fuente",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Sentimiento_Score",
+              "displayName": "Sentimiento_Score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Jugadores_Mencionados",
+              "displayName": "Jugadores_Mencionados",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Resumen",
+              "displayName": "Resumen",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Link",
+              "displayName": "Link",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        928,
+        0
+      ],
+      "id": "82cb21a5-fac9-49b1-a5bf-b18ab18ee21a",
+      "name": "5 Nuevas filas en Sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "MycVBaeRWh2KeZHs",
+          "name": "Google Sheets"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Este código solo corre para el mail, no afecta al Sheets\nfor (const item of $input.all()) {\n  const urlOriginal = item.json.Link;\n  // Transformamos la URL en un botón de texto azul\n  item.json.Link = `<a href=\"${urlOriginal}\" style=\"color: #003366; font-weight: bold; text-decoration: none;\">Ver noticia</a>`;\n}\nreturn $input.all();"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        0
+      ],
+      "id": "756842e5-9e70-467f-b749-8c27551a3bdd",
+      "name": "Formatear Link para el Email"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Disparador diario": {
+      "main": [
+        [
+          {
+            "node": "Buscador y Lector de noticias",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscador y Lector de noticias": {
+      "main": [
+        [
+          {
+            "node": "Sort",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit": {
+      "main": [
+        [
+          {
+            "node": "Oteador GPT",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Oteador GPT": {
+      "main": [
+        [
+          {
+            "node": "NLP Limpieza y Estructuración de datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NLP Limpieza y Estructuración de datos": {
+      "main": [
+        [
+          {
+            "node": "5 Nuevas filas en Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sort": {
+      "main": [
+        [
+          {
+            "node": "Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message": {
+      "main": [
+        [
+          {
+            "node": "Clear sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Clear sheet": {
+      "main": [
+        []
+      ]
+    },
+    "5 Nuevas filas en Sheet": {
+      "main": [
+        [
+          {
+            "node": "Formatear Link para el Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatear Link para el Email": {
+      "main": [
+        [
+          {
+            "node": "HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "99acf061-1b3d-47cd-8185-3d1562531be5",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1377766b106779c42baace151421ae5f0c18bebd79cc2a532845e29617baf203"
+  },
+  "id": "mI0Q_AW7DOirqV3ebp6WF",
+  "tags": []
+}
