@@ -5,6 +5,7 @@
 ![n8n](https://img.shields.io/badge/n8n-workflow-red?logo=n8n)
 ![JSON](https://img.shields.io/badge/data-JSON-lightgrey?logo=json)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb)
+![Antigravity](https://img.shields.io/badge/physics-antigravity-brightgreen?logo=python&logoColor=white)
 
 # IAO Football Analytics 
 
