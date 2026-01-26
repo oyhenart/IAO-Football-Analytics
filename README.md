@@ -4,14 +4,14 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb)
 
-# 🧠 IAO Football Analytics ⚽
+# IAO Football Analytics 
 
 **IAO Football Analytics** es un proyecto personal orientado al análisis de rendimiento futbolístico utilizando herramientas de *Python*, *Pandas*, *Matplotlib* y *mplsoccer*.  
 El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas al fútbol, generando visualizaciones y métricas que aporten valor táctico.
 
 ---
 
-## 📁 Estructura del repositorio
+## Estructura del repositorio
 
 - `data/` → archivos de datos crudos o procesados.  
 - `src/` → scripts de Python para procesamiento, análisis o funciones.  
@@ -33,7 +33,7 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
 
 ---
 
-## 🧩 Librerías principales
+## Librerías principales
 - `pandas`  
 - `numpy`  
 - `matplotlib`  
@@ -42,25 +42,25 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
 
 ---
 
-## 🚀 Próximos pasos
+## Próximos pasos
 - Añadir datasets reales en `/data/`.
 - Guardar visualizaciones generadas en `/outputs/`.
 - Crear funciones personalizadas en `/src/` para automatizar análisis.
 
 ---
 
-## 🚀 Cómo empezar
+## Cómo empezar
 
 1. Abrir el notebook en Google Colab.  
 2. Instalar librerías necesarias:
    ```python
    !pip install -r requirements.txt
    
-## ✍️ Autor
+## Autor
 **Israel Oyhenart**  
 📧 Contacto: [LinkedIn](https:www.linkedin.com/in/israel-oyhenart/)
 
-## 📚 Fuentes / Créditos
+## Fuentes / Créditos
 
 Algunos ejercicios y datos fueron obtenidos o inspirados en [LanusStats](https://linktr.ee/lanusstats)  
 Se usaron para fines educativos y de aprendizaje personal.
