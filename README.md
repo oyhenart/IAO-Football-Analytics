@@ -20,7 +20,7 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
 
 ---
 
-# 📊 Notebooks disponibles
+# Notebooks disponibles
 
 | Notebook | Descripción | Abrir en Colab |
 |-----------|-------------|----------------|
@@ -58,7 +58,7 @@ El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas 
    
 ## Autor
 **Israel Oyhenart**  
-📧 Contacto: [LinkedIn](https:www.linkedin.com/in/israel-oyhenart/)
+Contacto: [LinkedIn](https:www.linkedin.com/in/israel-oyhenart/)
 
 ## Fuentes / Créditos
 
