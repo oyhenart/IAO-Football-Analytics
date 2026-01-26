@@ -1,15 +1,18 @@
 <p align="center">
-![Python](https://img.shields.io/badge/python-3.12-blue)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
-![n8n](https://img.shields.io/badge/n8n-workflow-red?logo=n8n)
-![JSON](https://img.shields.io/badge/data-JSON-lightgrey?logo=json)
-![Colab](https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)
-![Gemini](https://img.shields.io/badge/Google_Gemini-8E75C2?style=flat&logo=googlegemini&logoColor=white)
-![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat&logo=openai&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
+  <img src="https://img.shields.io/badge/python-3.12-blue" />
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter" />
+  <img src="https://img.shields.io/badge/n8n-workflow-red?logo=n8n" />
+  <img src="https://img.shields.io/badge/data-JSON-lightgrey?logo=json" />
+  <img src="https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google_Gemini-8E75C2?style=flat&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/ChatGPT-74aa9c?style=flat&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/license-MIT-green" />
 </p>
 
-# IAO Football Analytics 
+<p align="center">
+  </p>
+
+<h1 align="center">IAO Football Analytics</h1>
 
 **IAO Football Analytics** es un proyecto personal orientado al análisis de rendimiento futbolístico utilizando herramientas de *Python*, *Pandas*, *Matplotlib* y *mplsoccer*.  
 El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas al fútbol, generando visualizaciones y métricas que aporten valor táctico.
@@ -58,6 +61,15 @@ Para optimizar el flujo de trabajo, he integrado un sistema de automatización u
 - `mplsoccer`
 
 ---
+
+## Stack Tecnológico & Co-piloción de IA
+
+Este proyecto no solo es un análisis de datos, sino un experimento de desarrollo asistido por inteligencia artificial para maximizar la eficiencia y la precisión.
+
+* **Google Gemini:** Mi copiloto para el diseño de la arquitectura del flujo de datos en **n8n** y la resolución de problemas lógicos complejos en Python.
+* **ChatGPT:** Utilizado para el refinamiento de visualizaciones estadísticas y la documentación técnica de este repositorio.
+
+La combinación de estas herramientas permitió reducir el tiempo de desarrollo de scripts de visualización y automatizar el pipeline de datos en un 60%.
 
 ## Próximos pasos
 - Añadir datasets reales en `/data/`.
