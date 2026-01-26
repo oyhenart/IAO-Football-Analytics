@@ -5,7 +5,8 @@
 ![n8n](https://img.shields.io/badge/n8n-workflow-red?logo=n8n)
 ![JSON](https://img.shields.io/badge/data-JSON-lightgrey?logo=json)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb)
-![Antigravity](https://img.shields.io/badge/physics-antigravity-brightgreen?logo=python&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google_Gemini-8E75C2?style=flat&logo=googlegemini&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat&logo=openai&logoColor=white)
 
 # IAO Football Analytics 
 
