@@ -1,96 +1,163 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/python-3.12-blue" />
-  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter" />
-  <img src="https://img.shields.io/badge/n8n-workflow-red?logo=n8n" />
-  <img src="https://img.shields.io/badge/data-JSON-lightgrey?logo=json" />
-  <img src="https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google_Gemini-8E75C2?style=flat&logo=googlegemini&logoColor=white" />
-  <img src="https://img.shields.io/badge/ChatGPT-74aa9c?style=flat&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/license-MIT-green" />
-</p>
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/143138109?v=4" width="120" alt="IAO Logo">
 
-<p align="center">
-  </p>
+  # IAO Football Analytics
 
-<h1 align="center">IAO Football Analytics</h1>
+  **Analítica de Datos · Automatización · BI aplicado al Fútbol**  
+  Python · n8n · StatsBomb · Visualización · Web Scraping · Longomatch
 
-**IAO Football Analytics** es un proyecto personal orientado al análisis de rendimiento futbolístico utilizando herramientas de *Python*, *Pandas*, *Matplotlib* y *mplsoccer*.  
-El objetivo es desarrollar habilidades prácticas en *data analytics* aplicadas al fútbol, generando visualizaciones y métricas que aporten valor táctico.
+  <a href="https://www.linkedin.com/in/israel-oyhenart">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
+</div>
+
+---
+
+## Sobre este proyecto
+
+**IAO Football Analytics** es un proyecto personal donde desarrollo habilidades prácticas en:
+
+- Análisis de rendimiento futbolístico.  
+- Visualización táctica de eventos.  
+- Automatización de flujos de datos deportivos.  
+- Extracción de información desde fuentes públicas.  
+
+El objetivo es construir un portfolio real orientado a clubes, scouting y analítica deportiva.
 
 ---
 
 ## Estructura del repositorio
 
-- `data/` → archivos de datos crudos o procesados.  
-- `src/` → scripts de Python para procesamiento, análisis o funciones.  
-- `outputs/` → gráficos, resultados y reportes generados.  
-- `notebooks/` → notebooks de experimentación y análisis.
-- `workflow/` → flujos de n8n para la obtención y limpieza automática de datos.
+Este repositorio está organizado de forma modular:
+
+- `data/` → datasets crudos o procesados  
+- `notebooks/` → análisis exploratorios y visualizaciones  
+- `src/` → scripts reutilizables en Python  
+- `outputs/` → imágenes generadas (mapas, gráficos, reportes)  
+- `workflow/` → automatizaciones exportadas desde n8n  
 
 ---
 
-# Notebooks disponibles
+## Stack Tecnológico
 
-| Notebook | Descripción | Abrir en Colab |
-|-----------|-------------|----------------|
-| [`Mapas_de_pases.ipynb`](notebooks/Mapas_de_pases.ipynb) | Visualización de pases entre jugadores con estructura y estilo de red. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapas_de_pases.ipynb) |
-| [`Mapa_de_calor.ipynb`](notebooks/Mapa_de_calor.ipynb) | Genera mapas de calor para analizar zonas de mayor actividad en el campo. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapa_de_calor.ipynb) |
-| [`Scatter_plot_flechas_pases.ipynb`](notebooks/Scatter_plot_flechas_pases.ipynb) | Muestra los pases entre jugadores con flechas indicando dirección e intensidad. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb) |
-| [`scatter_plot_efectividad_defensiva.ipynb`](notebooks/scatter_plot_efectividad_defensiva.ipynb) | Analiza y representa visualmente las acciones defensivas de los jugadores. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/scatter_plot_efectividad_defensiva.ipynb) |
-| [`Mapa_de_pases.ipynb`](notebooks/Mapa_de_pases.ipynb) | Crea mapas de pases simples como punto de partida para análisis tácticos. | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapa_de_pases.ipynb) |
-| `mundial_2022_statsbomb.ipynb` | Análisis de pases progresivos y métricas de distancia al arco rival (Dataset: StatsBomb - Mundial 2022). | [![Antigravity](https://img.shields.io/badge/Open%20in-Antigravity-CC0000?style=for-the-badge&logo=google&logoColor=white)](https://antigravity.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/mundial_2022_statsbomb.ipynb) |
-| *(Próximamente)* | Más análisis y modelos de rendimiento. |
-
----
-
-### Automatización (n8n)
-
-Para optimizar el flujo de trabajo, he integrado un sistema de automatización utilizando **n8n**. Esto permite que la recolección de datos no sea manual, facilitando un pipeline de datos más dinámico.
-
-| Workflow | Descripción | Estado |
-| :--- | :--- | :--- |
-| [obtencion_datos_futbol.json](./workflow/obtencion_datos_futbol.json) | Conexión con APIs, limpieza inicial de JSONs y almacenamiento en `/data`. | ![n8n](https://img.shields.io/badge/n8n-workflow-red?logo=n8n) |
-| *(Próximamente)* | Automatización de reportes tácticos y alertas de partidos. | ⏳ En desarrollo |
-
-> **Nota:** Los archivos `.json` en la carpeta `workflow/` son exportaciones. Para usarlos, impórtalos en tu instancia de n8n.
-
-## Librerías principales
-- `pandas`  
-- `numpy`  
-- `matplotlib`  
-- `seaborn`  
+### Análisis y Visualización
+- Python (`pandas`, `numpy`)
+- `matplotlib`
 - `mplsoccer`
+- StatsBomb Open Data
+
+### Videoanálisis
+- LongoMatch (captura y etiquetado)
+
+### Automatización
+- n8n (pipelines de datos)
+
+### Web Scraping aplicado al fútbol
+- `requests`
+- `BeautifulSoup`
+- `Selenium`
 
 ---
 
-## Stack Tecnológico & Co-piloción de IA
+## Notebooks disponibles
 
-Este proyecto no solo es un análisis de datos, sino un experimento de desarrollo asistido por inteligencia artificial para maximizar la eficiencia y la precisión.
+Actualmente el repositorio incluye los siguientes análisis:
 
-* **Google Gemini:** Mi copiloto para el diseño de la arquitectura del flujo de datos en **n8n** y la resolución de problemas lógicos complejos en Python.
-* **ChatGPT:** Utilizado para el refinamiento de visualizaciones estadísticas y la documentación técnica de este repositorio.
+### Mapas de pases (red de conexiones)
+Archivo: `notebooks/Mapas_de_pases.ipynb`  
+Visualización de pases entre jugadores con estructura tipo network.
 
-La combinación de estas herramientas permitió reducir el tiempo de desarrollo de scripts de visualización y automatizar el pipeline de datos en un 60%.
+Abrir en Colab:  
+https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapas_de_pases.ipynb
+
+---
+
+### Mapa de calor
+Archivo: `notebooks/Mapa_de_calor.ipynb`  
+Análisis de zonas de mayor participación en el campo.
+
+Colab:  
+https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapa_de_calor.ipynb
+
+---
+
+### Scatter de pases con flechas
+Archivo: `notebooks/Scatter_plot_flechas_pases.ipynb`  
+Representación de dirección e intensidad de pases.
+
+Colab:  
+https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb
+
+---
+
+### Efectividad defensiva
+Archivo: `notebooks/scatter_plot_efectividad_defensiva.ipynb`  
+Acciones defensivas y rendimiento visual por jugador.
+
+Colab:  
+https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/scatter_plot_efectividad_defensiva.ipynb
+
+---
+
+### Mundial 2022 (StatsBomb)
+Archivo: `notebooks/mundial_2022_statsbomb.ipynb`  
+Análisis de progresión, pases y distancia al arco rival usando StatsBomb Open Data.
+
+Colab:  
+https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/mundial_2022_statsbomb.ipynb
+
+---
+
+📌 Próximamente se agregarán nuevos modelos y reportes automáticos.
+
+---
+
+## Automatización con n8n
+
+El repositorio incluye flujos de automatización para evitar tareas manuales como:
+
+- obtención de datos desde APIs deportivas
+- limpieza inicial de eventos JSON
+- organización automática en `/data`
+
+Workflow disponible:
+
+- `workflow/obtencion_datos_futbol.json`
+
+> Los archivos `.json` son exportaciones.  
+> Para utilizarlos, deben importarse dentro de una instancia local o cloud de n8n.
+
+---
 
 ## Próximos pasos
-- Añadir datasets reales en `/data/`.
-- Guardar visualizaciones generadas en `/outputs/`.
-- Crear funciones personalizadas en `/src/` para automatizar análisis.
+
+- Incorporar datasets reales en `/data`
+- Generar reportes gráficos guardados en `/outputs`
+- Crear funciones reutilizables en `/src`
+- Automatizar alertas y reportes post-partido con n8n
+- Integrar scraping de fixtures y estadísticas públicas
 
 ---
 
-## Cómo empezar
-
-1. Abrir el notebook en Google Colab.  
-2. Instalar librerías necesarias:
-   ```python
-   !pip install -r requirements.txt
-   
 ## Autor
+
 **Israel Oyhenart**  
-Contacto: [LinkedIn](https:www.linkedin.com/in/israel-oyhenart/)
+Analista de Datos aplicado al Fútbol
 
-## Fuentes / Créditos
+LinkedIn:  
+https://www.linkedin.com/in/israel-oyhenart
 
-Algunos ejercicios y datos fueron obtenidos o inspirados en [LanusStats](https://linktr.ee/lanusstats)  
-Se usaron para fines educativos y de aprendizaje personal.
+---
+
+## Créditos
+
+Parte del contenido y datasets fueron inspirados en ejercicios educativos de:
+
+- LanusStats → https://linktr.ee/lanusstats
+
+Este repositorio tiene fines de aprendizaje y desarrollo profesional.
+
+
+
+
+
