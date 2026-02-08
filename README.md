@@ -67,8 +67,7 @@ Actualmente el repositorio incluye los siguientes análisis:
 Archivo: `notebooks/Mapas_de_pases.ipynb`  
 Visualización de pases entre jugadores con estructura tipo network.
 
-Abrir en Colab:  
-https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapas_de_pases.ipynb
+Abrir notebook: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapas_de_pases.ipynb)
 
 ---
 
@@ -76,8 +75,7 @@ https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/ma
 Archivo: `notebooks/Mapa_de_calor.ipynb`  
 Análisis de zonas de mayor participación en el campo.
 
-Colab:  
-https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapa_de_calor.ipynb
+Abrir notebook: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Mapa_de_calor.ipynb)
 
 ---
 
@@ -85,8 +83,7 @@ https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/ma
 Archivo: `notebooks/Scatter_plot_flechas_pases.ipynb`  
 Representación de dirección e intensidad de pases.
 
-Colab:  
-https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb
+Abrir notebook: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/Scatter_plot_flechas_pases.ipynb)
 
 ---
 
@@ -94,8 +91,7 @@ https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/ma
 Archivo: `notebooks/scatter_plot_efectividad_defensiva.ipynb`  
 Acciones defensivas y rendimiento visual por jugador.
 
-Colab:  
-https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/scatter_plot_efectividad_defensiva.ipynb
+Abrir notebook: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/scatter_plot_efectividad_defensiva.ipynb)
 
 ---
 
@@ -103,8 +99,7 @@ https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/ma
 Archivo: `notebooks/mundial_2022_statsbomb.ipynb`  
 Análisis de progresión, pases y distancia al arco rival usando StatsBomb Open Data.
 
-Colab:  
-https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/mundial_2022_statsbomb.ipynb
+Abrir notebook: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/mundial_2022_statsbomb.ipynb)
 
 ---
 
