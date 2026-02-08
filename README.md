@@ -107,6 +107,19 @@ Abrir notebook: [![Open in Colab](https://colab.research.google.com/assets/colab
 
 ---
 
+## Visualizaciones generadas
+
+### Mapa de pases
+![Mapa de pases](outputs/mapa_pases.png)
+
+### Heatmap – Rodrigo De Paul
+![Heatmap De Paul](outputs/heatmap_rodrigo_de_paul.png)
+
+### Scatter de pases con flechas
+![Scatter flechas](outputs/scatter_flechas_pases.png)
+
+---
+
 ## Automatización con n8n
 
 El repositorio incluye flujos de automatización para evitar tareas manuales como:
