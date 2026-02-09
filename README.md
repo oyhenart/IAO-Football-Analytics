@@ -102,6 +102,11 @@ Análisis de progresión, pases y distancia al arco rival usando StatsBomb Open 
 
 Abrir notebook: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oyhenart/IAO-Football-Analytics/blob/main/notebooks/mundial_2022_statsbomb.ipynb)
 
+### Eficiencia Goleadora (Understat - Web Scraping)
+Archivo: `notebooks/plantilla_understat_pro.ipynb`
+
+[Abrir notebook](notebooks/plantilla_understat_pro.ipynb)
+
 ---
 
 📌 Próximamente se agregarán nuevos modelos y reportes automáticos.
@@ -135,6 +140,12 @@ Workflow disponible:
 
 > Los archivos `.json` son exportaciones.  
 > Para utilizarlos, deben importarse dentro de una instancia local o cloud de n8n.
+
+---
+
+#### Web Scraping y Sourcing de Datos
+* **Libraries:** `BeautifulSoup`, `Selenium`, `requests`.
+* **Advanced Sourcing:** `soccerdata` (Integración con Understat, FBRef, WhoScored).
 
 ---
 
