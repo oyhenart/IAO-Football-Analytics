@@ -44,6 +44,7 @@ Este repositorio está organizado de forma modular:
 - Python (`pandas`, `numpy`)
 - `matplotlib`
 - `mplsoccer`
+- `seaborn`
 - StatsBomb Open Data
 
 ### Videoanálisis
