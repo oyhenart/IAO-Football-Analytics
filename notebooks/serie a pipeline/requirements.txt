@@ -1,0 +1,11 @@
+## **requirements.txt** 
+
+pandas>=2.0.0
+numpy>=1.24.0
+plotly>=5.15.0
+ipywidgets>=8.0.0
+papermill>=2.5.0
+jupyterlab>=4.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+selenium>=4.15.0 
