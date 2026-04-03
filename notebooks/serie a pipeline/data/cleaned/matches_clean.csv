@@ -1,0 +1,301 @@
+id,tournament,season,round,status,home_team,away_team,home_score,away_score
+13981424,Serie A,25/26,1,Ended,Juventus,Parma,2,0
+13981438,Serie A,25/26,1,Ended,Udinese,Hellas Verona,1,1
+13981421,Serie A,25/26,1,Ended,Inter,Torino,5,0
+13981444,Serie A,25/26,1,Ended,Atalanta,Pisa,1,1
+13981423,Serie A,25/26,1,Ended,Como,Lazio,2,0
+13981431,Serie A,25/26,1,Ended,Sassuolo,Napoli,0,2
+13981428,Serie A,25/26,1,Ended,Roma,Bologna,1,0
+13981439,Serie A,25/26,1,Ended,Milan,Cremonese,1,2
+13981422,Serie A,25/26,1,Ended,Genoa,Lecce,0,0
+13981425,Serie A,25/26,1,Ended,Cagliari,Fiorentina,1,1
+13981448,Serie A,25/26,2,Ended,Genoa,Juventus,0,1
+13981429,Serie A,25/26,2,Ended,Torino,Fiorentina,0,0
+13981436,Serie A,25/26,2,Ended,Napoli,Cagliari,1,0
+13981433,Serie A,25/26,2,Ended,Bologna,Como,1,0
+13981447,Serie A,25/26,2,Ended,Lecce,Milan,0,2
+13981443,Serie A,25/26,2,Ended,Cremonese,Sassuolo,3,2
+13981432,Serie A,25/26,2,Ended,Inter,Udinese,1,2
+13981441,Serie A,25/26,2,Ended,Pisa,Roma,0,1
+13981426,Serie A,25/26,2,Ended,Parma,Atalanta,1,1
+13981446,Serie A,25/26,2,Ended,Lazio,Hellas Verona,4,0
+13981442,Serie A,25/26,3,Ended,Fiorentina,Napoli,1,3
+13981435,Serie A,25/26,3,Ended,Juventus,Inter,4,3
+13981437,Serie A,25/26,3,Ended,Milan,Bologna,1,0
+13981434,Serie A,25/26,3,Ended,Roma,Torino,0,1
+13981451,Serie A,25/26,3,Ended,Hellas Verona,Cremonese,0,0
+13981430,Serie A,25/26,3,Ended,Como,Genoa,1,1
+13981445,Serie A,25/26,3,Ended,Pisa,Udinese,0,1
+13981427,Serie A,25/26,3,Ended,Cagliari,Parma,2,0
+13981449,Serie A,25/26,3,Ended,Sassuolo,Lazio,1,0
+13981450,Serie A,25/26,3,Ended,Atalanta,Lecce,4,1
+13981454,Serie A,25/26,4,Ended,Torino,Atalanta,0,3
+13981458,Serie A,25/26,4,Ended,Napoli,Pisa,3,2
+13981455,Serie A,25/26,4,Ended,Lecce,Cagliari,1,2
+13981452,Serie A,25/26,4,Ended,Hellas Verona,Juventus,1,1
+13981453,Serie A,25/26,4,Ended,Udinese,Milan,0,3
+13981457,Serie A,25/26,4,Ended,Lazio,Roma,0,1
+13981456,Serie A,25/26,4,Ended,Inter,Sassuolo,2,1
+13981461,Serie A,25/26,4,Ended,Fiorentina,Como,1,2
+13981463,Serie A,25/26,4,Ended,Cremonese,Parma,0,0
+13981460,Serie A,25/26,4,Ended,Bologna,Genoa,2,1
+13981459,Serie A,25/26,5,Ended,Cagliari,Inter,0,2
+13981465,Serie A,25/26,5,Ended,Juventus,Atalanta,1,1
+13981462,Serie A,25/26,5,Ended,Como,Cremonese,1,1
+13981472,Serie A,25/26,5,Ended,Milan,Napoli,2,1
+13981468,Serie A,25/26,5,Ended,Lecce,Bologna,2,2
+13981469,Serie A,25/26,5,Ended,Roma,Hellas Verona,2,0
+13981467,Serie A,25/26,5,Ended,Pisa,Fiorentina,0,0
+13981466,Serie A,25/26,5,Ended,Parma,Torino,2,1
+13981464,Serie A,25/26,5,Ended,Genoa,Lazio,0,3
+13981476,Serie A,25/26,5,Ended,Sassuolo,Udinese,3,1
+13981483,Serie A,25/26,6,Ended,Atalanta,Como,1,1
+13981475,Serie A,25/26,6,Ended,Inter,Cremonese,4,1
+13981473,Serie A,25/26,6,Ended,Lazio,Torino,3,3
+13981471,Serie A,25/26,6,Ended,Juventus,Milan,0,0
+13981470,Serie A,25/26,6,Ended,Bologna,Pisa,4,0
+13981477,Serie A,25/26,6,Ended,Udinese,Cagliari,1,1
+13981478,Serie A,25/26,6,Ended,Fiorentina,Roma,1,2
+13981480,Serie A,25/26,6,Ended,Parma,Lecce,0,1
+13981481,Serie A,25/26,6,Ended,Hellas Verona,Sassuolo,0,1
+13981474,Serie A,25/26,6,Ended,Napoli,Genoa,2,1
+13981484,Serie A,25/26,7,Ended,Pisa,Hellas Verona,0,0
+13981482,Serie A,25/26,7,Ended,Como,Juventus,2,0
+13981490,Serie A,25/26,7,Ended,Lecce,Sassuolo,0,0
+13981485,Serie A,25/26,7,Ended,Roma,Inter,0,1
+13981479,Serie A,25/26,7,Ended,Torino,Napoli,1,0
+13981494,Serie A,25/26,7,Ended,Genoa,Parma,0,0
+13981487,Serie A,25/26,7,Ended,Atalanta,Lazio,0,0
+13981495,Serie A,25/26,7,Ended,Cagliari,Bologna,0,2
+13981491,Serie A,25/26,7,Ended,Cremonese,Udinese,1,1
+13981486,Serie A,25/26,7,Ended,Milan,Fiorentina,2,1
+13981493,Serie A,25/26,8,Ended,Udinese,Lecce,3,2
+13981499,Serie A,25/26,8,Ended,Milan,Pisa,2,2
+13981498,Serie A,25/26,8,Ended,Napoli,Inter,3,1
+13981488,Serie A,25/26,8,Ended,Cremonese,Atalanta,1,1
+13981492,Serie A,25/26,8,Ended,Torino,Genoa,2,1
+13981489,Serie A,25/26,8,Ended,Hellas Verona,Cagliari,2,2
+13981496,Serie A,25/26,8,Ended,Sassuolo,Roma,0,1
+13981502,Serie A,25/26,8,Ended,Fiorentina,Bologna,2,2
+13981497,Serie A,25/26,8,Ended,Parma,Como,0,0
+13981500,Serie A,25/26,8,Ended,Lazio,Juventus,1,0
+13981504,Serie A,25/26,9,Ended,Bologna,Torino,0,0
+13981505,Serie A,25/26,9,Ended,Genoa,Cremonese,0,2
+13981508,Serie A,25/26,9,Ended,Juventus,Udinese,3,1
+13981512,Serie A,25/26,9,Ended,Roma,Parma,2,1
+13981507,Serie A,25/26,9,Ended,Como,Hellas Verona,3,1
+13981511,Serie A,25/26,9,Ended,Pisa,Lazio,0,0
+13981503,Serie A,25/26,9,Ended,Cagliari,Sassuolo,1,2
+13981506,Serie A,25/26,9,Ended,Inter,Fiorentina,3,0
+13981509,Serie A,25/26,9,Ended,Lecce,Napoli,0,1
+13981501,Serie A,25/26,9,Ended,Atalanta,Milan,1,1
+13981520,Serie A,25/26,10,Ended,Torino,Pisa,2,2
+13981514,Serie A,25/26,10,Ended,Napoli,Como,0,0
+13981516,Serie A,25/26,10,Ended,Udinese,Atalanta,1,0
+13981518,Serie A,25/26,10,Ended,Hellas Verona,Inter,1,2
+13981510,Serie A,25/26,10,Ended,Cremonese,Juventus,1,2
+13981517,Serie A,25/26,10,Ended,Milan,Roma,1,0
+13981522,Serie A,25/26,10,Ended,Parma,Bologna,1,3
+13981524,Serie A,25/26,10,Ended,Sassuolo,Genoa,1,2
+13981515,Serie A,25/26,10,Ended,Lazio,Cagliari,2,0
+13981513,Serie A,25/26,10,Ended,Fiorentina,Lecce,0,1
+13981521,Serie A,25/26,11,Ended,Atalanta,Sassuolo,0,3
+13981531,Serie A,25/26,11,Ended,Juventus,Torino,0,0
+13981529,Serie A,25/26,11,Ended,Como,Cagliari,0,0
+13981525,Serie A,25/26,11,Ended,Pisa,Cremonese,1,0
+13981519,Serie A,25/26,11,Ended,Bologna,Napoli,2,0
+13981528,Serie A,25/26,11,Ended,Parma,Milan,2,2
+13981527,Serie A,25/26,11,Ended,Inter,Lazio,2,0
+13981523,Serie A,25/26,11,Ended,Roma,Udinese,2,0
+13981530,Serie A,25/26,11,Ended,Genoa,Fiorentina,2,2
+13981526,Serie A,25/26,11,Ended,Lecce,Hellas Verona,0,0
+13981542,Serie A,25/26,12,Ended,Cagliari,Genoa,3,3
+13981534,Serie A,25/26,12,Ended,Udinese,Bologna,0,3
+13981535,Serie A,25/26,12,Ended,Torino,Como,1,5
+13981538,Serie A,25/26,12,Ended,Inter,Milan,0,1
+13981536,Serie A,25/26,12,Ended,Sassuolo,Pisa,2,2
+13981539,Serie A,25/26,12,Ended,Fiorentina,Juventus,1,1
+13981533,Serie A,25/26,12,Ended,Napoli,Atalanta,3,1
+13981532,Serie A,25/26,12,Ended,Hellas Verona,Parma,1,2
+13981541,Serie A,25/26,12,Ended,Cremonese,Roma,1,3
+13981537,Serie A,25/26,12,Ended,Lazio,Lecce,2,0
+13981550,Serie A,25/26,13,Ended,Bologna,Cremonese,1,3
+13981540,Serie A,25/26,13,Ended,Roma,Napoli,0,1
+13981549,Serie A,25/26,13,Ended,Atalanta,Fiorentina,2,0
+13981546,Serie A,25/26,13,Ended,Lecce,Torino,2,1
+13981543,Serie A,25/26,13,Ended,Pisa,Inter,0,2
+13981545,Serie A,25/26,13,Ended,Milan,Lazio,1,0
+13981548,Serie A,25/26,13,Ended,Como,Sassuolo,2,0
+13981547,Serie A,25/26,13,Ended,Genoa,Hellas Verona,2,1
+13981551,Serie A,25/26,13,Ended,Juventus,Cagliari,2,1
+13981544,Serie A,25/26,13,Ended,Parma,Udinese,0,2
+13981558,Serie A,25/26,14,Ended,Sassuolo,Fiorentina,3,1
+13981557,Serie A,25/26,14,Ended,Napoli,Juventus,2,1
+13981559,Serie A,25/26,14,Ended,Inter,Como,4,0
+13981560,Serie A,25/26,14,Ended,Cagliari,Roma,1,0
+13981555,Serie A,25/26,14,Ended,Pisa,Parma,0,1
+13981553,Serie A,25/26,14,Ended,Hellas Verona,Atalanta,3,1
+13981552,Serie A,25/26,14,Ended,Udinese,Genoa,1,2
+13981563,Serie A,25/26,14,Ended,Cremonese,Lecce,2,0
+13981554,Serie A,25/26,14,Ended,Torino,Milan,2,3
+13981556,Serie A,25/26,14,Ended,Lazio,Bologna,1,1
+13981564,Serie A,25/26,15,Ended,Genoa,Inter,1,2
+13981573,Serie A,25/26,15,Ended,Torino,Cremonese,1,0
+13981561,Serie A,25/26,15,Ended,Lecce,Pisa,1,0
+13981566,Serie A,25/26,15,Ended,Parma,Lazio,0,1
+13981565,Serie A,25/26,15,Ended,Bologna,Juventus,0,1
+13981562,Serie A,25/26,15,Ended,Milan,Sassuolo,2,2
+13981569,Serie A,25/26,15,Ended,Atalanta,Cagliari,2,1
+13981570,Serie A,25/26,15,Ended,Udinese,Napoli,1,0
+13981571,Serie A,25/26,15,Ended,Fiorentina,Hellas Verona,1,2
+13981577,Serie A,25/26,15,Ended,Roma,Como,1,0
+13981568,Serie A,25/26,16,Ended,Fiorentina,Udinese,5,1
+13981572,Serie A,25/26,16,Ended,Lazio,Cremonese,0,0
+13981580,Serie A,25/26,16,Ended,Sassuolo,Torino,0,1
+13981581,Serie A,25/26,16,Ended,Cagliari,Pisa,2,2
+14844287,Serie A,25/26,16,Ended,Inter,Lecce,1,0
+14844295,Serie A,25/26,16,Ended,Napoli,Parma,0,0
+14844293,Serie A,25/26,16,Ended,Hellas Verona,Bologna,2,3
+13981579,Serie A,25/26,16,Ended,Genoa,Atalanta,0,1
+14844296,Serie A,25/26,16,Ended,Como,Milan,1,3
+13981575,Serie A,25/26,16,Ended,Juventus,Roma,2,1
+13981584,Serie A,25/26,17,Ended,Torino,Cagliari,1,2
+13981587,Serie A,25/26,17,Ended,Parma,Fiorentina,1,0
+13981589,Serie A,25/26,17,Ended,Bologna,Sassuolo,1,1
+13981582,Serie A,25/26,17,Ended,Cremonese,Napoli,0,2
+13981591,Serie A,25/26,17,Ended,Atalanta,Inter,0,1
+13981590,Serie A,25/26,17,Ended,Lecce,Como,0,3
+13981583,Serie A,25/26,17,Ended,Udinese,Lazio,1,1
+13981586,Serie A,25/26,17,Ended,Roma,Genoa,3,1
+13981585,Serie A,25/26,17,Ended,Pisa,Juventus,0,2
+13981588,Serie A,25/26,17,Ended,Milan,Hellas Verona,3,0
+13981598,Serie A,25/26,18,Ended,Genoa,Pisa,1,1
+13981595,Serie A,25/26,18,Ended,Sassuolo,Parma,1,1
+13981602,Serie A,25/26,18,Ended,Cagliari,Milan,0,1
+13981600,Serie A,25/26,18,Ended,Como,Udinese,1,0
+13981597,Serie A,25/26,18,Ended,Inter,Bologna,3,1
+13981599,Serie A,25/26,18,Ended,Fiorentina,Cremonese,1,0
+13981596,Serie A,25/26,18,Ended,Juventus,Lecce,1,1
+13981594,Serie A,25/26,18,Ended,Atalanta,Roma,1,0
+13981592,Serie A,25/26,18,Ended,Lazio,Napoli,0,2
+13981593,Serie A,25/26,18,Ended,Hellas Verona,Torino,0,3
+13981604,Serie A,25/26,19,Ended,Lecce,Roma,0,2
+13981601,Serie A,25/26,19,Ended,Bologna,Atalanta,0,2
+13981609,Serie A,25/26,19,Ended,Pisa,Como,0,3
+13981607,Serie A,25/26,19,Ended,Napoli,Hellas Verona,2,2
+14844437,Serie A,25/26,19,Ended,Milan,Genoa,1,1
+14844436,Serie A,25/26,19,Ended,Cremonese,Cagliari,2,2
+13981610,Serie A,25/26,19,Ended,Parma,Inter,0,2
+13981611,Serie A,25/26,19,Ended,Torino,Udinese,1,2
+13981605,Serie A,25/26,19,Ended,Lazio,Fiorentina,2,2
+13981608,Serie A,25/26,19,Ended,Sassuolo,Juventus,0,3
+13981618,Serie A,25/26,20,Ended,Inter,Napoli,2,2
+13981615,Serie A,25/26,20,Ended,Hellas Verona,Lazio,0,1
+13981621,Serie A,25/26,20,Ended,Lecce,Parma,1,2
+13981616,Serie A,25/26,20,Ended,Como,Bologna,1,1
+13981614,Serie A,25/26,20,Ended,Fiorentina,Milan,1,1
+13981617,Serie A,25/26,20,Ended,Genoa,Cagliari,3,0
+13981619,Serie A,25/26,20,Ended,Roma,Sassuolo,2,0
+13981624,Serie A,25/26,20,Ended,Udinese,Pisa,2,2
+13981613,Serie A,25/26,20,Ended,Atalanta,Torino,2,0
+13981623,Serie A,25/26,20,Ended,Juventus,Cremonese,5,0
+13981634,Serie A,25/26,21,Ended,Torino,Roma,0,2
+13981629,Serie A,25/26,21,Ended,Pisa,Atalanta,1,1
+13981625,Serie A,25/26,21,Ended,Cagliari,Juventus,1,0
+13981630,Serie A,25/26,21,Ended,Udinese,Inter,0,1
+13981627,Serie A,25/26,21,Ended,Parma,Genoa,0,0
+13981626,Serie A,25/26,21,Ended,Lazio,Como,0,3
+13981628,Serie A,25/26,21,Ended,Milan,Lecce,1,0
+13981633,Serie A,25/26,21,Ended,Napoli,Sassuolo,1,0
+13981620,Serie A,25/26,21,Ended,Bologna,Fiorentina,1,2
+13981622,Serie A,25/26,21,Ended,Cremonese,Hellas Verona,0,0
+13981637,Serie A,25/26,22,Ended,Inter,Pisa,6,2
+13981640,Serie A,25/26,22,Ended,Hellas Verona,Udinese,1,3
+13981642,Serie A,25/26,22,Ended,Sassuolo,Cremonese,1,0
+13981639,Serie A,25/26,22,Ended,Lecce,Lazio,0,0
+13981632,Serie A,25/26,22,Ended,Fiorentina,Cagliari,1,2
+13981636,Serie A,25/26,22,Ended,Genoa,Bologna,3,2
+13981641,Serie A,25/26,22,Ended,Roma,Milan,1,1
+13981638,Serie A,25/26,22,Ended,Juventus,Napoli,3,0
+13981635,Serie A,25/26,22,Ended,Atalanta,Parma,4,0
+13981631,Serie A,25/26,22,Ended,Como,Torino,6,0
+13981651,Serie A,25/26,23,Ended,Udinese,Roma,1,0
+13981648,Serie A,25/26,23,Ended,Parma,Juventus,1,4
+13981645,Serie A,25/26,23,Ended,Como,Atalanta,0,0
+13981653,Serie A,25/26,23,Ended,Torino,Lecce,1,0
+15370282,Serie A,25/26,23,Ended,Bologna,Milan,0,3
+13981649,Serie A,25/26,23,Ended,Cremonese,Inter,0,2
+13981652,Serie A,25/26,23,Ended,Pisa,Sassuolo,1,3
+13981644,Serie A,25/26,23,Ended,Cagliari,Hellas Verona,4,0
+13981647,Serie A,25/26,23,Ended,Napoli,Fiorentina,2,1
+13981646,Serie A,25/26,23,Ended,Lazio,Genoa,3,2
+13981654,Serie A,25/26,24,Ended,Bologna,Parma,0,1
+15462526,Serie A,25/26,24,Ended,Milan,Como,1,1
+13981658,Serie A,25/26,24,Ended,Fiorentina,Torino,2,2
+13981666,Serie A,25/26,24,Ended,Genoa,Napoli,2,3
+13981664,Serie A,25/26,24,Ended,Roma,Cagliari,2,0
+13981655,Serie A,25/26,24,Ended,Juventus,Lazio,2,2
+13981660,Serie A,25/26,24,Ended,Sassuolo,Inter,0,5
+13981662,Serie A,25/26,24,Ended,Hellas Verona,Pisa,0,0
+13981656,Serie A,25/26,24,Ended,Lecce,Udinese,2,1
+13981650,Serie A,25/26,24,Ended,Atalanta,Cremonese,2,1
+13981670,Serie A,25/26,25,Ended,Pisa,Milan,1,2
+13981669,Serie A,25/26,25,Ended,Torino,Bologna,1,2
+13981663,Serie A,25/26,25,Ended,Cagliari,Lecce,0,2
+13981671,Serie A,25/26,25,Ended,Inter,Juventus,3,2
+13981672,Serie A,25/26,25,Ended,Udinese,Sassuolo,1,2
+13981657,Serie A,25/26,25,Ended,Cremonese,Genoa,0,0
+13981668,Serie A,25/26,25,Ended,Parma,Hellas Verona,2,1
+13981667,Serie A,25/26,25,Ended,Como,Fiorentina,1,2
+13981659,Serie A,25/26,25,Ended,Lazio,Atalanta,0,2
+13981665,Serie A,25/26,25,Ended,Napoli,Roma,2,2
+13981676,Serie A,25/26,26,Ended,Genoa,Torino,3,0
+13981678,Serie A,25/26,26,Ended,Juventus,Como,0,2
+13981681,Serie A,25/26,26,Ended,Sassuolo,Hellas Verona,3,0
+13981680,Serie A,25/26,26,Ended,Milan,Parma,0,1
+13981682,Serie A,25/26,26,Ended,Roma,Cremonese,3,0
+13981674,Serie A,25/26,26,Ended,Cagliari,Lazio,0,0
+13981679,Serie A,25/26,26,Ended,Lecce,Inter,0,2
+13981677,Serie A,25/26,26,Ended,Fiorentina,Pisa,1,0
+13981673,Serie A,25/26,26,Ended,Atalanta,Napoli,2,1
+13981675,Serie A,25/26,26,Ended,Bologna,Udinese,1,0
+13981694,Serie A,25/26,27,Ended,Hellas Verona,Napoli,1,2
+13981689,Serie A,25/26,27,Ended,Sassuolo,Atalanta,2,1
+13981684,Serie A,25/26,27,Ended,Inter,Genoa,2,0
+13981687,Serie A,25/26,27,Ended,Parma,Cagliari,1,1
+13981683,Serie A,25/26,27,Ended,Como,Lecce,3,1
+13981688,Serie A,25/26,27,Ended,Roma,Juventus,3,3
+13981685,Serie A,25/26,27,Ended,Cremonese,Milan,0,2
+13981691,Serie A,25/26,27,Ended,Udinese,Fiorentina,3,0
+13981686,Serie A,25/26,27,Ended,Pisa,Bologna,0,1
+13981690,Serie A,25/26,27,Ended,Torino,Lazio,2,0
+13981697,Serie A,25/26,28,Ended,Juventus,Pisa,4,0
+13981695,Serie A,25/26,28,Ended,Atalanta,Udinese,2,2
+13981692,Serie A,25/26,28,Ended,Bologna,Hellas Verona,1,2
+13981700,Serie A,25/26,28,Ended,Milan,Inter,1,0
+13981693,Serie A,25/26,28,Ended,Cagliari,Como,1,2
+13981698,Serie A,25/26,28,Ended,Genoa,Roma,2,1
+13981699,Serie A,25/26,28,Ended,Lazio,Sassuolo,2,1
+13981702,Serie A,25/26,28,Ended,Napoli,Torino,2,1
+13981696,Serie A,25/26,28,Ended,Fiorentina,Parma,0,0
+13981701,Serie A,25/26,28,Ended,Lecce,Cremonese,2,1
+13981714,Serie A,25/26,29,Ended,Torino,Parma,4,1
+13981705,Serie A,25/26,29,Ended,Inter,Atalanta,1,1
+13981706,Serie A,25/26,29,Ended,Pisa,Cagliari,3,1
+13981712,Serie A,25/26,29,Ended,Udinese,Juventus,0,1
+13981708,Serie A,25/26,29,Ended,Napoli,Lecce,2,1
+13981710,Serie A,25/26,29,Ended,Hellas Verona,Genoa,0,2
+13981711,Serie A,25/26,29,Ended,Sassuolo,Bologna,0,1
+13981703,Serie A,25/26,29,Ended,Como,Roma,2,1
+13981707,Serie A,25/26,29,Ended,Lazio,Milan,1,0
+13981704,Serie A,25/26,29,Ended,Cremonese,Fiorentina,1,4
+13981715,Serie A,25/26,30,Ended,Fiorentina,Inter,1,1
+13981719,Serie A,25/26,30,Ended,Juventus,Sassuolo,1,1
+13981718,Serie A,25/26,30,Ended,Como,Pisa,5,0
+13981713,Serie A,25/26,30,Ended,Bologna,Lazio,0,2
+13981709,Serie A,25/26,30,Ended,Atalanta,Hellas Verona,1,0
+13981722,Serie A,25/26,30,Ended,Roma,Lecce,1,0
+13981717,Serie A,25/26,30,Ended,Cagliari,Napoli,0,1
+13981721,Serie A,25/26,30,Ended,Parma,Cremonese,0,2
+13981716,Serie A,25/26,30,Ended,Genoa,Udinese,0,2
+13981724,Serie A,25/26,30,Ended,Milan,Torino,3,2
